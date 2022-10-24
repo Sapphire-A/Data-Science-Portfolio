@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxy SQL DB</title>
+    <link rel="stylesheet"  href="style.css" type ="text/css" media = "screen"/> 
+  </head>
+
+<body>
+<Div id="rb1"> 
+<br><br>
+    <h1>ANALYZE WITH AKU</h1>
+
+    <ul id = "a2">
+      <li id="r1"><a href = "my_portfolio.html"> Portfolio </a></li> &nbsp;&nbsp;&nbsp; 
+      <li id="r1"><a href = "About_me".html> About Me </a></li>
+      <li id="r1"> <a href = "index.html"> Welcome </a></li> &nbsp;&nbsp;&nbsp;
+  </ul>
+</Div>
+
+<Div id="a3">
+ <h2> VIEWS, CONSTRAINTS, INDEXES </h2>
+ </Div>
+<h2>  <u>VIEWS </u></h2>
+<Div id="rb3">
+  
+Views are temporary tables created from the basic tables to highlight specific designations or features or to show a broad range of features as required by the company or the analyst. They make analysis easier. Creating a view requires a lot miore specication or precision than creating a simply table and a lot more rules apply.
+For example the table headers or column titles must have unique names, as must the View itself. Furthermore, some clauses like the 'ORDER BY' clause cannot be used in the query unless the 'TOP' aggregate is used in the SELECT statement; and so on.
+a view can be a union of other views or tables as in the Roxy example below.
+
+<br><br>
+<img src="Creating Views Using The WITH Stmt.png" alt="Test Image" width="70%" height="150%"/><br>
+
+<h4><u>CONSTRAINTS </u></h4>
+
+Constraints are checks set up in tables to preserve the integrity of the data, that is, to ensure that only data that meet the set specifications are allowed into the specified column. They can be created with the table initially,  or added to an already existing table. The syntax used in both cases are slightly different.
+<br><br>
+<b><span style="color:red">
+
+CHECK</b></span> constraints were put in the fields/columns representing <b>BTA </b> and <b> PTA </b> which have a limit of 5000 and 4000 respectively. They were equally put in the <b>CBN Buy_Amount </b> column as this Amount has a cap of $50000.
+<br><br>
+<b><span style="color:red">
+  
+UNIQUE </span> </b> constraints were also put in various fields including all item ID's that are not Primary Keys 
+<br><br>
+<img src="Adding Constraints.png" alt="Test Image" width="70%" height="150%"/><br>
+
+<h4><u> INDEXES </u></h4>
+
+Indexes are a speedup mechanism to quickly find important or significant features of data within database tables or columns.
+<br>
+Indexes were placed in relevant tables and columns for quick reference such as the Customer table and the Forex Purchases tables to prioritise significant information. 
+<br><br> 
+<ul>
+<i><p style="color:red">
+Create index idx_Ocean on Customer<br>(Occupation, Acquaintance, nationality)
+<br>
+Create index idx_TA
+On Forex_sales (BTA, PTA) 
+<br>
+Create index idx_fax on CBN_Purchases <br>(FX_Rate, Amount_USD)
+</i></ul>
+</p> 
+
+<h4><u> STORED PROC</u></h4>
+Stored Procedures are SQL statements stored in the database that can be executed or called in
+queries. Using a stored procedure allows encapsulation of complicated or frequently used logic,
+and improves query performance by utilizing cached query plans. They can return any value a
+standard query can return.
+Other benefits over dynamic SQL expressions
+  
+
+<div id="rb4"> </div>
+</body>
+<footer id="ft2">
+  
+  <a href="Roxy_Tables_Info.html"> BACK</a>
+        <a style="float:right" href="Roxy_User Stories.html"> NEXT </a>
+  <p style="TEXT-ALIGN: center">  
+
+
+  
+  CONTACT<br>
+  akuwealth@yahoo.com<br><br>
+
+    copyright @AnayzeWithAku 2022</p>
+
+    
+
+</footer>
+</html>
